@@ -25,7 +25,7 @@
 1. **Clone Repository**
 
    ```bash
-   git clone https://github.com/username/cek-nilai.git
+   git clone https://github.com/raybrilliant/cek-nilai.git
    ```
 
 2. **Masuk ke Direktori Project**
