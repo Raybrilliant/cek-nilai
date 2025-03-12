@@ -1,38 +1,61 @@
-# sv
+# Cek Nilai
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Cek Nilai** adalah sebuah project hobby yang dibuat untuk memudahkan siswa melihat nilai mereka berdasarkan NIS. Aplikasi ini dibangun dengan menggunakan **SvelteKit** untuk frontend dan **Supabase** sebagai backend serta penyedia database.
 
-## Creating a project
+## Fitur
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Pencarian Nilai Berdasarkan NIS:** Siswa dapat dengan mudah memasukkan NIS untuk mendapatkan informasi nilai.
+- **Realtime Update:** Data nilai di-update secara real-time melalui Supabase.
+- **Antarmuka Responsif:** Dibangun dengan SvelteKit untuk pengalaman pengguna yang cepat dan responsif.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Teknologi yang Digunakan
 
-# create a new project in my-app
-npx sv create my-app
-```
+- [SvelteKit](https://kit.svelte.dev/) – Framework modern untuk membangun aplikasi web.
+- [Supabase](https://supabase.com/) – Platform backend dengan fitur database, autentikasi, dan API.
+- [Bun](https://bun.sh/) – Runtime JavaScript yang cepat dan modern.
 
-## Developing
+## Cara Memulai
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prasyarat
 
-```bash
-npm run dev
+- Bun (pastikan Bun sudah terinstal)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### Instalasi
 
-## Building
+1. **Clone Repository**
 
-To create a production version of your app:
+   ```bash
+   git clone https://github.com/username/cek-nilai.git
+   ```
 
-```bash
-npm run build
-```
+2. **Masuk ke Direktori Project**
 
-You can preview the production build with `npm run preview`.
+   ```bash
+   cd cek-nilai
+   ```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+3. **Instal Dependencies**
+
+   Gunakan Bun untuk menginstal dependencies:
+   ```bash
+   bun install
+   ```
+
+4. **Konfigurasi Supabase**
+
+   Buat file `.env` berdasarkan contoh di file `.env.example` dan masukkan kredensial Supabase Anda.
+
+5. **Jalankan Server Development**
+
+   Jalankan development server dengan Bun:
+   ```bash
+   bun dev
+   ```
+
+6. **Buka Browser**
+
+   Buka [http://localhost:5173](http://localhost:5173) untuk melihat aplikasi.
+
+## Lisensi
+
+Project ini bersifat open-source dan tersedia di bawah [MIT License](LICENSE).
