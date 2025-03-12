@@ -44,8 +44,6 @@
 4. **Konfigurasi Supabase**
 
    Buat file `.env` berdasarkan contoh di file `.env.example` dan masukkan kredensial Supabase Anda.
-
-      File `.env`:
    ```bash
    PUBLIC_SUPABASE_URL = url supabase kamu 
    PUBLIC_SUPABASE_KEY = api key supabase kamu
