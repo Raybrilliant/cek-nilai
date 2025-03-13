@@ -57,7 +57,7 @@ export const actions = {
             const filteredData = jsonData.map(({ name, ...rest }) => rest);
         
             // Insert data ke Supabase
-            const { error } = await supabase.from('assignment').upsert(filteredData);
+            const { error } = await supabase.from('assignment').upsert(filteredData,{ onConflict: 'user_id,assignment' });
 
             if (error) {
                 return fail(400,{ message: error.message });
