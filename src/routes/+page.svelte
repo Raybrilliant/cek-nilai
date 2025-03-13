@@ -83,10 +83,11 @@
             Teknik Informatika
           </h2>
           <hr />
-          <div class="flex justify-between mt-2">
+          <div class="flex justify-between my-2">
             <h2 class="font-semibold">{studentData.name}</h2>
             <h2 class="font-semibold">{studentData.class}</h2>
           </div>
+          <hr/>
 
           <!-- Table -->
           <div class="overflow-y-auto h-72">
@@ -94,14 +95,14 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>Nilai</th>
+                  <th class=" text-center">Nilai</th>
                 </tr>
               </thead>
               <tbody>
                 {#each studentData.assignment as item}
                   <tr>
                     <th>{item.assignment}</th>
-                    <td>{item.score}</td>
+                    <td class=" text-center">{item.score}</td>
                   </tr>
                 {/each}
               </tbody>
