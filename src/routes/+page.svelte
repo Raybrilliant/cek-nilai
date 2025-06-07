@@ -38,7 +38,7 @@
   const getAverage = () => {
     const sum = studentData.assignment.reduce((acc: any, item: any) => acc + item.score,0);
     const average = sum / studentData.assignment.length;
-    return average;
+    return Math.round(average);
   };
 
 </script>
