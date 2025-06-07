@@ -40,6 +40,7 @@
     const average = sum / studentData.assignment.length;
     return average;
   };
+
 </script>
 
 <section class="p-4 flex flex-col justify-center items-center h-screen w-full">
@@ -71,6 +72,27 @@
               Cek Nilai
             {/if}
           </button>
+          <p class="text-sm font-semibold italic text-gray-500">Pesan Perpisahan</p>
+          <p class="text-sm text-justify space-y-3">
+            Setahun ini kita telah lewati masa-masa yang seru. 
+            Belajar, bercanda, bertumbuh bersama dalam ruang penuh cerita. 
+            Terima kasih atas setiap momen yang membuat langkah ini begitu berarti.
+            <br/>
+            Kini, tibalah saatnya saya pamit undur diri. 
+            Tugas baru memanggil saya melangkah ke tempat yang lain, 
+            Namun kenangan tentang kalian akan tetap tinggal di hati, 
+            sebagai jejak indah dalam perjalanan seorang guru.
+            <br />
+            Ilmu yang pernah kita bagi, semoga tetap hidup dan tumbuh dalam langkah kalian. 
+            Jika kelak kalian menoleh ke belakang, 
+            semoga ada sepotong pelajaran dan doa yang setia menyertai.
+            <br />
+            Tetaplah menjadi pembelajar sejati
+            rendah hati, penuh semangat, dan tak takut bermimpi. 
+            Sampai jumpa di lain waktu. 
+            Doa terbaikku selalu untuk kalian semua.
+            <br/>
+          </p>
         </div>
       {:else if status == 200}
         <!-- Result Page -->
